@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Analisador de núneros</title>
+    <link rel="stylesheet" href="stilo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Analisador de números</h1>
+    </header>
+    <section>
+      <div>
+        Números entre(1 e 100):<input type="number" id="ctxtn" /><input
+          type="button"
+          value="adicionar"
+          id="adi"
+          onclick="add()"
+        />
+        <br /><br /><select name="addn" id="seln" size="10"></select>
+        <br /><input
+          type="button"
+          id="bfim"
+          value="finalizar"
+          onclick="finalizar()"
+        />
+      </div>
+      <div id="res"></div>
+    </section>
+    <footer>
+      <p>&copy;Marcos Vinicius futuro programador!!</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

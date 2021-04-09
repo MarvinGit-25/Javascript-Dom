@@ -1,0 +1,27 @@
+body {
+  font-family: 15pt arial;
+  background-image: url("./noite.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+section {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  width: 500px;
+  margin: auto;
+  padding: 15px;
+  border: 2px blue solid;
+}
+
+div#img {
+  text-align: center;
+  padding: 8px;
+}
+
+header {
+  color: white;
+  text-align: center;
+}

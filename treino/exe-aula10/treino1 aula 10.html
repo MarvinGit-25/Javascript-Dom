@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>eventos DOM!!</title>
+  </head>
+  <style>
+    div#area {
+      background-color: cadetblue;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+      font-size: 30px;
+    }
+  </style>
+  <body>
+    <div
+      id="area"
+      onclick="clicar()"
+      onmouseenter="entrar()"
+      onmouseout="saiu()"
+    >
+      interaja
+    </div>
+  </body>
+  <script>
+    var area = document.getElementById("area");
+    function clicar() {
+      area.innerHTML = "clicou";
+      area.style.backgroundColor = "red";
+    }
+
+    function entrar() {
+      area.innerHTML = "entrou";
+      area.syle.backgroundColor = "";
+    }
+    function saiu() {
+      area.innerHTML = "saiu";
+      area.style.backgroundColor = "cadetblue";
+    }
+  </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <titile></titile>
+  </head>
+  <style>
+    div#res {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <h1>Sistemas de multas</h1>
+    <div id="foto">
+      <img src="placa.jpg" alt="foto-multas" />
+    </div>
+    velocidade do carro <input type="number" id="txtvel" /> Km/h
+    <input type="button" value="verificar" id="veri" onclick="verificar()" />
+    <div id="res"></div>
+  </body>
+  <script>
+    function verificar() {
+      var txt1 = Number(document.querySelector("input#txtvel").value);
+      var res = document.querySelector("div#res");
+      var vel = txt1;
+      res.innerHTML = `<p>Sua velocidade é de <strong>${vel}</strong> Km/h</p>`;
+      if (vel > 60) {
+        alert("Multado");
+        res.innerHTML += "<strong>Multado!!</strong>";
+      } else {
+        res.innerHTML += `<strong>Dirija sempre com cuidado!!</strong>`;
+      }
+    }
+  </script>
+</html>

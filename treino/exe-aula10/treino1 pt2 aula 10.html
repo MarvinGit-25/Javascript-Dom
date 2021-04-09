@@ -1,0 +1,39 @@
+<!DOCTYPE htmal>
+<html>
+  <head>
+    <meta charset="UTF_8" />
+    <title>eventos DOM!!</title>
+  </head>
+  <style>
+    div.area {
+      text-align: center;
+      line-height: 200px;
+      font-size: 20pt;
+      color: white;
+      background-color: black;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+  <body>
+    <!--Aqui a interação é feita atraves do javascript-->
+    <div class="area">interaja</div>
+  </body>
+  <script>
+    let area = document.querySelector("div.area");
+    area.addEventListener("click", clicar);
+    area.addEventListener("mouseenter", entrar);
+    area.addEventListener("mouseout", sair);
+    function clicar() {
+      area.innerText = "clicou";
+      area.style.backgroundColor = "red";
+    }
+    function entrar() {
+      area.innerText = "entrou";
+    }
+    function sair() {
+      area.innerText = "saiu";
+      area.style.backgroundColor = "black";
+    }
+  </script>
+</html>

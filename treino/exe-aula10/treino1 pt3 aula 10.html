@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF_8" />
+    <title>Somador</title>
+  </head>
+  <style>
+    input {
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 20pt;
+      margin-bottom: 20px;
+    }
+  </style>
+  <body>
+    <h1>Somando valores</h1>
+    <input type="number" id="ct1" /> +
+    <input type="number" id="ct2" />
+    <input type="button" value="somar" onclick="somar()" />
+    <div id="res">resultado</div>
+    <script>
+      function somar() {
+        var c1 = Number(document.getElementById("ct1").value);
+        var c2 = Number(document.getElementById("ct2").value);
+        var res = document.getElementById("res");
+        var s = c1 + c2;
+        res.innerHTML = `A soma entre ${c1} e ${c2} é igual a ${s}`;
+      }
+    </script>
+  </body>
+</html>

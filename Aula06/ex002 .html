@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Meu primeiro programa...</title>
+    <style>
+      /* style é um mecanismo para adicionar estilo a um documento web.  */
+      body {
+        background-color: burlywood; /* background  manipula o plano de fundo de uma página ou dos elementos nela declarados.*/
+        color: red;
+        font: normal 20pt Arial;
+      }
+      h1 {
+        color: rgb(199, 168, 33);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Somador Númerico</h1>
+    <!-- <h1></h1>  transforma em titulo -->
+    <p>Soma.</p>
+    <!--<p> </p> cria um paragrafo -->
+    <script>
+      var n1 = Number(window.prompt("Digite um número")); // Number converte string pra número.
+      var n2 = Number(window.prompt("Digite um número"));
+      var s = n1 + n2;
+      window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`); // `template string ${} `
+    </script>
+  </body>
+</html>
